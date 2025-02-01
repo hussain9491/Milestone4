@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Resume By Hussain Ali</h1>
+     <div class="container">
+    <!-- Resume Form -->
+    <form id="resumeForm">
+      <label for="personalInfo">Personal Information</label>
+      <input type="text" id="personalInfo" name="personalInfo" placeholder="Enter your name">
+  
+      <label for="education">Education</label>
+      <input type="text" id="education" name="education" placeholder="Enter your education details">
+  
+      <label for="workExperience">Work Experience</label>
+      <input type="text" id="workExperience" name="workExperience" placeholder="Enter your work experience">
+      <label for="skills">Skills</label>
+      <input type="text" id="skills" name="skills" placeholder="Enter your skills">
+
+      <br>
+      <br>
+      
+      <button type="submit">Generate Resume</button>
+    </form>
+  
+    <!-- Display the generated resume -->
+    <div id="resumeOutput" class="output">
+      <h3>Your Resume</h3>
+      <p><strong>Personal Information:</p></strong> 
+      <span id="outputPersonal" class="edit"></span>
+      <p><strong>Education:</strong> </p>
+      <span id="outputEducation" class="edit"></span>
+      <p><strong>Work Experience:</strong> </p>
+      <span id="outputWorkExperience" class="edit"></span>
+      <p><strong>Skills:</strong> </p>
+      <span id="outputSkills" class="edit"></span>
+    </div>
+  
+   </div>
+    
+
+  <script src="index.js"></script>
+</body>
+</html>
